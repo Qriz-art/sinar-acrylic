@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 export default function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -262,38 +263,71 @@ export default function Home() {
       </section>
 
       {/* PRODUK */}
-      <section id="produk" className="bg-slate-950/80 px-6 py-24">
-        <div className="mx-auto max-w-7xl">
-          <div className="mb-12 text-center">
-            <p className="font-bold text-blue-400">PRODUK UNGGULAN</p>
-            <h2 className="mt-3 text-4xl font-black md:text-5xl">
-              Cocok untuk Usaha, Event, dan Dekorasi
-            </h2>
+<section id="produk" className="bg-slate-950/80 px-6 py-24">
+  <div className="mx-auto max-w-7xl">
+    <div className="mb-12 text-center">
+      <p className="font-bold text-blue-400">PRODUK UNGGULAN</p>
+      <h2 className="mt-3 text-4xl font-black md:text-5xl">
+        Hasil Pengerjaan Kami
+      </h2>
+    </div>
+
+    <div className="grid gap-6 md:grid-cols-3">
+      {[
+  {
+    title: "Huruf Timbul LED",
+    image: "/images/huruf-timbul-led-tegal.jpeg",
+  },
+  {
+    title: "Mahar Akrilik",
+    image: "/images/mahar-akrilik-tegal.jpeg",
+  },
+  {
+    title: "Nameplate Kantor",
+    image: "/images/nameplate-kantor-tegal.jpeg",
+  },
+  {
+    title: "Plakat Akrilik",
+    image: "/images/plakat-akrilik-tegal.jpeg",
+  },
+  {
+    title: "Signage Rumah Sakit",
+    image: "/images/signage-rsud-brebes.jpeg",
+  },
+  {
+    title: "Trophy & Souvenir",
+    image: "/images/trophy-sekolah.jpeg",
+  },
+
+      ].map((item) => (
+        <div
+          key={item.title}
+          className="overflow-hidden rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900 to-slate-950"
+        >
+          <div className="relative h-60 w-full">
+            <Image
+              src={item.image}
+              alt={item.title}
+              fill
+              className="object-cover transition duration-500 hover:scale-110"
+            />
           </div>
 
-          <div className="grid gap-6 md:grid-cols-3">
-            {[
-              "Huruf Timbul Akrilik",
-              "Plakat Akrilik",
-              "Box Mahar",
-              "Standing Menu",
-              "Nomor Rumah",
-              "Display Toko",
-            ].map((title) => (
-              <div
-                key={title}
-                className="rounded-3xl border border-white/10 bg-gradient-to-br from-slate-900 to-slate-950 p-8"
-              >
-                <div className="mb-8 h-44 rounded-2xl border border-blue-400/20 bg-blue-500/10" />
-                <h3 className="text-2xl font-black">{title}</h3>
-                <p className="mt-3 text-slate-400">
-                  Dibuat rapi, kuat, dan bisa disesuaikan dengan desain pelanggan.
-                </p>
-              </div>
-            ))}
+          <div className="p-6">
+            <h3 className="text-2xl font-black">
+              {item.title}
+            </h3>
+
+            <p className="mt-3 text-slate-400">
+              Produk custom berkualitas dengan hasil rapi,
+              presisi, dan profesional.
+            </p>
           </div>
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+</section>
 
       {/* GALERI */}
       <section id="galeri" className="mx-auto max-w-7xl px-6 py-24">

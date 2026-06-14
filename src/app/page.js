@@ -333,27 +333,44 @@ export default function Home() {
       <section id="galeri" className="mx-auto max-w-7xl px-6 py-24">
         <div className="mb-12 flex flex-col justify-between gap-6 md:flex-row md:items-end">
           <div>
-            <p className="font-bold text-blue-400">GALERI</p>
+            <p className="font-bold text-blue-400"></p>
             <h2 className="mt-3 text-4xl font-black md:text-5xl">
               Contoh Hasil Pengerjaan
             </h2>
           </div>
           <p className="max-w-md text-slate-400">
-            Nantinya bagian ini bisa diganti dengan foto asli workshop dan hasil
-            produk pelanggan.
-          </p>
+  Beberapa contoh hasil pengerjaan huruf timbul,
+  plakat akrilik, mahar, signage, nameplate,
+  dan berbagai kebutuhan branding pelanggan.
+</p>
         </div>
 
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
-          {Array.from({ length: 8 }).map((_, i) => (
-            <div
-              key={i}
-              className={`rounded-3xl border border-white/10 bg-blue-500/10 ${
-                i === 1 || i === 6 ? "row-span-2 min-h-80" : "min-h-40"
-              }`}
-            />
-          ))}
-        </div>
+        <div className="grid gap-4 md:grid-cols-4">
+  {[
+    "/images/huruf-timbul-led-tegal.jpeg",
+    "/images/mahar-akrilik-tegal.jpeg",
+    "/images/nameplate-kantor-tegal.jpeg",
+    "/images/plakat-akrilik-tegal.jpeg",
+    "/images/signage-rsud-brebes.jpeg",
+    "/images/trophy-sekolah.jpeg",
+    "/images/huruf-timbul-led-tegal.jpeg",
+    "/images/plakat-akrilik-tegal.jpeg",
+  ].map((image, index) => (
+    <div
+      key={index}
+      className="group overflow-hidden rounded-3xl border border-white/10"
+    >
+      <div className="relative h-64 w-full">
+        <Image
+          src={image}
+          alt={`Galeri Sinar Acrylic ${index + 1}`}
+          fill
+          className="object-cover transition duration-500 group-hover:scale-110"
+        />
+      </div>
+    </div>
+  ))}
+</div>
       </section>
 
       {/* TESTIMONI */}

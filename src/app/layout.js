@@ -29,28 +29,34 @@ export const metadata = {
     "pt ade sinar lestari",
   ],
   alternates: {
-    canonical: "https://domain-kamu.com",
+    canonical: "https://sinar-acrylic.vercel.app",
   },
   icons: {
     icon: "/icon.png",
   },
   openGraph: {
-    title: "Sinar Acrylic Tegal | Laser Cutting & Produk Akrilik Custom",
-    description:
-      "Spesialis jasa akrilik dan laser cutting terpercaya di Tegal.",
-    url: "https://domain-kamu.com",
-    siteName: "Sinar Acrylic",
-    images: [
-      {
-        url: "/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Sinar Acrylic Tegal",
-      },
-    ],
-    locale: "id_ID",
-    type: "website",
-  },
+  title: "Sinar Acrylic Tegal | Laser Cutting & Produk Akrilik Custom",
+  description:
+    "Spesialis jasa akrilik dan laser cutting terpercaya di Tegal.",
+  url: "https://sinar-acrylic.vercel.app",
+  siteName: "Sinar Acrylic",
+  images: [
+    {
+      url: "/og-image.png",
+      width: 1200,
+      height: 630,
+      alt: "Sinar Acrylic Tegal",
+    },
+  ],
+  locale: "id_ID",
+  type: "website",
+},
+twitter: {
+  card: "summary_large_image",
+  title: "Sinar Acrylic Tegal",
+  description: "Laser Cutting & Acrylic Custom Tegal",
+  images: ["/og-image.jpg"],
+},
 };
 
 export default function RootLayout({ children }) {

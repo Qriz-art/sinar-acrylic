@@ -13,6 +13,10 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   metadataBase: new URL("https://sinar-acrylic.vercel.app"),
+   verification: {
+    google: "wE9pVkTL9WLEBdnxjX0BF3QMVLe1GSpUj-spwAGJgoE",
+  },
+
   title: "Sinar Acrylic Tegal | Laser Cutting, Huruf Timbul & Akrilik Custom",
   description:
     "Sinar Acrylic Tegal melayani jasa laser cutting, huruf timbul, signage, plakat, box mahar, neon box, dan produk akrilik custom dengan hasil presisi dan profesional.",
@@ -55,7 +59,7 @@ twitter: {
   card: "summary_large_image",
   title: "Sinar Acrylic Tegal",
   description: "Laser Cutting & Acrylic Custom Tegal",
-  images: ["/og-image.jpg"],
+  images: ["/og-image.png"],
 },
 };
 

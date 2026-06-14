@@ -35,7 +35,7 @@ export const metadata = {
     icon: "/icon.png",
   },
   openGraph: {
-  title: "Sinar Acrylic Tegal | Laser Cutting & Produk Akrilik Custom",
+  title: "Sinar Acrylic PT ADE SINAR LESTARI | Laser Cutting & Produk Akrilik Custom",
   description:
     "Spesialis jasa akrilik dan laser cutting terpercaya di Tegal.",
   url: "https://sinar-acrylic.vercel.app",

@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  metadataBase: new URL("https://domain-kamu.com"),
+  metadataBase: new URL("https://sinar-acrylic.vercel.app"),
   title: "Sinar Acrylic Tegal | Laser Cutting, Huruf Timbul & Akrilik Custom",
   description:
     "Sinar Acrylic Tegal melayani jasa laser cutting, huruf timbul, signage, plakat, box mahar, neon box, dan produk akrilik custom dengan hasil presisi dan profesional.",

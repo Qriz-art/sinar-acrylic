@@ -10,7 +10,7 @@ export default function Home() {
   type="application/ld+json"
   dangerouslySetInnerHTML={{
     __html: JSON.stringify({
-      "@context": "https://schema.org",
+      "@context": "https://sinar-acrylic.vercel.app",
       "@type": "LocalBusiness",
       name: "Sinar Acrylic",
       legalName: "PT ADE SINAR LESTARI",
